@@ -330,7 +330,7 @@ nav {
 }
 
 .nav__logo a {
-  font-size: 1.75rem;
+  font-size: 4rem;
   font-weight: 400;
   font-family: var(--header-font);
   color: var(--white);
@@ -418,6 +418,7 @@ nav {
 .header__image__card {
   position: absolute;
   padding: 0.75rem 1rem;
+  margin-left: 2vw;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -462,28 +463,33 @@ nav {
 }
 
 .header__content h1 {
-  position: absolute;
-  top: 10vw;
-  margin-bottom: 1vw;
+  position: relative;
+  padding-bottom: 60%;
+  margin-bottom: 0vw;
   font-size: 3vw;
-  font-weight: 250;
+  font-weight: 300;
   font-family: var(--header-font);
   color: var(--text-dark);
   line-height: 4rem;
   text-align: center;
 }
 
-.header__content h1 span {
-  color: var(--primary-color);
-}
-
 .header__content p {
   position: absolute;
-  top: 30vw;
+  top: 28vw;
   margin-bottom: 2vw;
+  margin-right: 52vw;
+  font-size: 1vw;
+  font-weight: 300;
+  font-family: var(--header-font);
+  color: var(--text-dark);
   columns: var(--text-light);
   line-height: 1.75rem;
   text-align: center;
+}
+
+.header__content h1 span {
+  color: var(--primary-color);
 }
 
 .header__content form {
@@ -573,7 +579,7 @@ nav {
 @media (width > 768px) {
   nav {
     position: static;
-    padding-block: 2rem 0;
+    padding-block: 1rem 0;
     padding-inline: 1rem;
     max-width: var(--max-width);
     margin-inline: auto;
