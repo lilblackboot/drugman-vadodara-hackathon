@@ -6,10 +6,10 @@
 :root {
     --green: rgb(33, 250, 131);
     --red: rgb(252, 86, 108);
-    --dusky-green: rgb(6, 170, 94);
-    --opac-white: rgba(255, 255, 255, .8);
-    --form-txt:  rgba(255, 255, 255, .5);
-    --darky: #1d2b3a;
+    --dusky-green: rgb(66, 159, 185);
+    --opac-white: rgba(17, 31, 98, 0.8);
+    --form-txt:  rgba(22, 71, 249, 0.5);
+    --darky: #e5e9ec;
     --light-grey: rgb(105, 105, 105);
 }
 
@@ -51,14 +51,14 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 45px;
     padding: 50px;
-    color: var(--form-txt);
+    color:#6c6a68 ;
 }
 .form-header {
     grid-column: 1 / -1;
     letter-spacing: .06em;
     margin-bottom: 30px;
     font-size: 40px;
-    color: white;
+    color: rgb(22, 15, 66);
 }
 input {
     display: block;
@@ -82,8 +82,8 @@ span {
 }
 [type="submit"]{
     border: 0;
-    background-color: var(--dusky-green);
-    color: white;
+    background-color: #2d40be;
+    color: rgb(15, 36, 100);
     padding: 10px 50px;
     letter-spacing: .05em;
     border-radius: 5px;
@@ -132,7 +132,7 @@ input:valid ~ span{
 input:focus,
 input:focus-visible {
     border: 1px solid  var(--green);
-    box-shadow: 0 0 5px rgb(0,0,0,.3);
+    box-shadow: 0 0 5px rgba(101, 7, 7, 0.3);
     outline: none;
 }
 input:valid {
@@ -160,7 +160,7 @@ input:valid {
     display: grid;
     place-items: center;
     background-color: var(--dusky-green);
-    color: white;
+    color: rgb(14, 46, 139);
 }
 .image-container > img {
     width: calc(90%);
