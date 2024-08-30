@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drugman</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Drug<span>Man</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Inventory</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+       <a href="../basket-sign-up/index.html"><button class="btn sign__up" >Sign Up</button> </a>
+        <a href="../basket-sign-up/login.html"><button class="btn sign__in">Sign In</button> </a>
+      </div>
+    </nav>
+    <header class="header__container">
+      <div class="header__image">
+        <div class="header__image__card header__image__card-1">
+          <span><i class="ri-instance-line"></i></span>
+           Make Order
+        </div>
+        <div class="header__image__card header__image__card-2">
+          <span><i class="ri-send-plane-line"></i></span>
+          Send Order
+        </div>
+        <div class="header__image__card header__image__card-3">
+          <span><i class="ri-map-2-line"></i></span>
+          Track
+        </div>
+        <div class="header__image__card header__image__card-4">
+          <span><i class="ri-pie-chart-line"></i></span>
+          Visualize
+        </div>
+        <img src="assets/header.png" alt="header"  />
+      </div>
+      <div class="header__content">
+        <h1>"Streamline, Secure, Succeed: <br />Your <span>PARTNER</span> In Drug <br /> Inventory Excellence </h1>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Current Loc.</h5>
+              <div>
+                <span><i class="ri-map-pin-line"></i></span>
+                <input type="text" placeholder="Paris, France" />
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Estimated Delivery</h5>
+              <div>
+                <span><i class="ri-calendar-2-line"></i></span>
+                <input type="text" placeholder="17 July 2024" />
+              </div>
+            </div>
+          </div>
+          <button type="submit">expand</button>
+        </form>
+        
+      </div>
+    </header>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
