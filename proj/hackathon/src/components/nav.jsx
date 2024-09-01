@@ -10,9 +10,9 @@ const Nav = () => {
       <nav>
         <div className='logo'><span className='drug'>Drug</span>Man<span></span></div>
         <div className='middle'>
-          <li>Orders</li>
-          <li>Inventory</li>
-          <li>Analytics</li>
+          <li>Home</li>
+          <li>Contact us</li>
+          <li>About us</li>
         </div>
        <div className='last'> 
         <button className='button'>logout</button>

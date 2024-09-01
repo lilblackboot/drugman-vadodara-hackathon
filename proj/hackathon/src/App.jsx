@@ -19,9 +19,17 @@ function App() {
      <Cards title='Total Inventory' states='#'/>
      <Cards title='Total Sales' states='#'/>
      </div>
-    <div className='medicine-orders'>
+    <div className='option-heading'>
+    <div className='medicine-orders cat'>
       <h1>Medicine Orders</h1>
       </div>
+      <div className='inventory cat'>
+      <h1>Inventory</h1>
+      </div>
+      <div className='analytics cat'>
+      <h1>Analytics</h1>
+      </div>
+    </div>
     <Line/><div className='table'>
     <Table className='medicineOrderTable'/></div>
     

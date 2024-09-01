@@ -15,9 +15,9 @@ body {
   justify-content: space-around;
   max-height: 30vw;
 }
-
-.medicine-orders{
+.cat{
   margin: 2vw;
+  padding-top: 2vw;
 }
 
 .mainpageNav{
@@ -28,4 +28,15 @@ body {
 .table{
   margin:1vw;
   padding:1vw;
+}
+
+.option-heading{
+  display: flex;
+  justify-content: space-around;
+}
+.inventory,.analytics{
+  color: lightgrey;
+}
+.inventory:hover,.analytics:hover{
+  color:black;
 }
