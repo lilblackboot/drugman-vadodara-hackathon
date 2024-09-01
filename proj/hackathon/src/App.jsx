@@ -22,8 +22,8 @@ function App() {
     <div className='medicine-orders'>
       <h1>Medicine Orders</h1>
       </div>
-    <Line/>
-    <Table className='medicineOrderTable'/>
+    <Line/><div className='table'>
+    <Table className='medicineOrderTable'/></div>
     
     </>
   )

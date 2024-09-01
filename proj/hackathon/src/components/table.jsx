@@ -4,6 +4,7 @@ import './table.css'
 
 
 const Table = (props) => {
+  console.log("table")
   return (
     <div>
        <table className="table">
