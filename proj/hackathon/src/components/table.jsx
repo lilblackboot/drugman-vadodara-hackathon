@@ -1,11 +1,12 @@
 import React from 'react'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './table.css'
 
 
 const Table = (props) => {
   return (
     <div>
-       <table class="table">
+       <table className="table">
   <thead>
     <tr>
       <th scope="col">OrderId</th>
@@ -29,7 +30,7 @@ const Table = (props) => {
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
+      <td colSpan="2">Larry the Bird</td>
       <td>@twitter</td>
     </tr>
   </tbody>
