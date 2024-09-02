@@ -7,6 +7,7 @@ const Nav = () => {
   console.log("nav")
   return (
     <div>
+      <div className='main'>
       <nav>
         <div className='logo'><span className='drug'>Drug</span>Man<span></span></div>
         <div className='middle'>
@@ -18,6 +19,7 @@ const Nav = () => {
         <button className='button'>logout</button>
       </div>
       </nav>
+      </div>
     </div>
   )
 }
