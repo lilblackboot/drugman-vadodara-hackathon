@@ -1,0 +1,43 @@
+/* src/index.css or src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding:0;
+}
+
+.state-board{
+  display: flex;
+  justify-content: space-around;
+  max-height: 30vw;
+}
+.cat{
+  margin: 2vw;
+  padding-top: 2vw;
+}
+
+.mainpageNav{
+  position: sticky;
+  top:5px
+}
+
+.table{
+  margin:1vw;
+  padding:1vw;
+}
+
+.option-heading{
+  margin-top: 4vw;
+  display: flex;
+  justify-content: space-around;
+}
+.inventory,.analytics{
+  color: lightgrey;
+}
+.inventory:hover,.analytics:hover{
+  color:black;
+}

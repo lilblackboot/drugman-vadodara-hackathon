@@ -92,7 +92,11 @@ submitBtn.addEventListener('click', (e) => {
             .then((userCredential) => {
                 // Signed in
                 alert("Login successful");
+<<<<<<< HEAD
                 window.location.href = "../inventory-management-dashboard/index.html";
+=======
+                window.location.href = "/hackathon/web loader/again.html";
+>>>>>>> cde66b85713f1bc67456fb9489b310d80e3f84aa
             })
             .catch((error) => {
                 const errorMessage = error.message;

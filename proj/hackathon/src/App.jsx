@@ -1,0 +1,40 @@
+import { useState } from 'react'
+import Nav  from './components/nav'
+import './App.css'
+import Cards from './components/cards.jsx'
+import Line from './components/line.jsx'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Table from './components/table.jsx'
+
+
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <Nav className='mainpageNav'/>
+    <div className='state-board'>
+     <Cards title='Total Orders' states='#'/>
+     <Cards title='Total Inventory' states='#'/>
+     <Cards title='Total Sales' states='#'/>
+     </div>
+    <div className='option-heading'>
+    <div className='medicine-orders cat'>
+      <h1>Medicine Orders</h1>
+      </div>
+      <div className='inventory cat'>
+      <h1>Inventory</h1>
+      </div>
+      <div className='analytics cat'>
+      <h1>Analytics</h1>
+      </div>
+    </div>
+    <Line/><div className='table'>
+    <Table className='medicineOrderTable'/></div>
+    
+    </>
+  )
+}
+
+export default App
