@@ -1,2 +1,0 @@
-# vadodara-hackathon
-## DrugMan
