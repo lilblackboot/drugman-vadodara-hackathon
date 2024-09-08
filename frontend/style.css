@@ -4,3 +4,20 @@ body{
 #GraphnRecent{
     display: flex;
 }
+#productList{
+    min-width: 100%;
+    margin: 3vw;
+    border: solid black 5px;
+}
+#graph,#recentProducts{
+    margin: 3vw;
+    border: solid black 5px;
+}
+.table{
+    width: 100%;
+}
+#menu{
+    min-width: max-content;
+    padding: 3vw;
+}
+
