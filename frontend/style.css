@@ -77,4 +77,6 @@ h4{
     font-weight: bold;
 }  
 
-
+#addProductForm{
+    padding: 3vw;
+}
