@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>DrugMan</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
 </head>
 <body style="display: flex;">
 
@@ -38,14 +45,25 @@
                 <div class="stateBox"></div>
             </div>
             <div class="compartment" id="colouredStates">
-                <div class="colouredStateBox"></div>
-                <div class="colouredStateBox"></div>
-                <div class="colouredStateBox"></div>
-                <div class="colouredStateBox"></div>
+                <div class="colouredStateBox1">
+                  <div class="box1" style="display: flex;">
+                    <div class="comp-box1">
+                      <h4 style="font-weight: bold;">100</h4>
+                      <h5>Customers</h5>
+                    </div>
+                    <div class="dash-imgs" style="top: 80%;align-content: right;">
+                      <i class="ri-user-3-line" style="font-size: 4vw;" ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="colouredStateBox2">hiiii</div>
+                <div class="colouredStateBox3">byyyy</div>
+                <div class="colouredStateBox4">sweeeee</div>
             </div>
             <div class="compartment" id="GraphnRecent">
                 <div class="GraphnProduct" id="Graph">
-                    
+                  <h3>Monthly Sales and Purchases</h3>
+                  <canvas id="salesPurchasesChart"></canvas>              
                 </div>
                 <div class="GraphnProduct" id="recentProducts">
                     <h2 class="TableHeader">
@@ -85,8 +103,7 @@
                 </div>
             </div>
             <div class="compartment" id="productList">
-                <h1 class="Productlist">Product List <button id="addProductButton" type="button" class="btn btn-primary btn-lg">Large button</button></h1>
-                <div id="addProductForm"></div>
+                <h1 class="Productlist">Product List <button type="button" class="btn btn-primary btn-lg">Large button</button></h1>
                 <table class="table">
                     <thead>
                       <tr>
@@ -122,7 +139,60 @@
 
         </footer>
     </div>
+    <script>
+      const ctx = document.getElementById('salesPurchasesChart').getContext('2d');
+
+      // Data for the chart
+      const data = {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          datasets: [{
+              label: 'Sales',
+              data: [5000, 3000, 4000, 4500, 6000, 7000, 5000, 8000, 9000, 8500, 9500, 10000], // Sales data
+              backgroundColor: 'lightgreen',  // Color for sales (light green)
+              borderRadius: 10,  // Rounded corners
+              borderWidth: 1
+          }, {
+              label: 'Purchases',
+              data: [-3000, -2500, -2000, -3500, -4000, -4500, -3000, -5500, -6000, -4000, -5000, -7000], // Purchases data (negative y-direction)
+              backgroundColor: 'lightcoral',  // Color for purchases (light red)
+              borderRadius: 10,  // Rounded corners
+              borderWidth: 1
+          }]
+      };
+
+      // Configuring the chart
+      const config = {
+          type: 'bar',
+          data: data,
+          options: {
+              scales: {
+                  x: {
+                      stacked: true,  // Align the bars horizontally
+                      grid: {
+                          display: false  // Remove the grid on x-axis
+                      },
+                      ticks: {
+                          display: false  // Hide month labels
+                      },
+                      barPercentage: 0.2,  // Reduce bar width (slimmer bars)
+                      categoryPercentage: 0.4  // Reduce bar width
+                  },
+                  y: {
+                      beginAtZero: true,
+                      stacked: true,  // Align the bars vertically
+                      grid: {
+                          display: false  // Remove the grid on y-axis
+                      }
+                  }
+              },
+              responsive: true
+          }
+      };
+
+      // Creating the chart
+      new Chart(ctx, config);
+  </script>
 </body>
-<script src="index.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
