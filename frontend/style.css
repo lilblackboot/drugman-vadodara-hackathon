@@ -6,12 +6,13 @@ body{
 }
 #productList{
     min-width: 100%;
-    margin: 3vw;
+    margin: 5px;
     border: solid black 5px;
 }
 #graph,#recentProducts{
-    margin: 3vw;
+    margin: 5px;
     border: solid black 5px;
+    padding:2vw;
 }
 .table{
     width: 100%;
@@ -22,8 +23,7 @@ body{
 }
 
 #recentProducts{
-    width: 58vw;
-    margin-left: 4em;
+    width: 50vw;
 }
 
 
