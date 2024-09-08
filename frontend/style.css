@@ -11,8 +11,9 @@ body{
 }
 #graph,#recentProducts{
     margin: 5px;
-    border: solid black 5px;
+    border: solid black 3px;
     padding:2vw;
+
 }
 .table{
     width: 100%;
@@ -21,9 +22,57 @@ body{
     min-width: max-content;
     padding: 4vw;
 }
-
+#Graph{
+    width: 40vw;
+    border: solid black 3px;
+}
 #recentProducts{
-    width: 50vw;
+    width: 38vw;
 }
 
+#colouredStates{
+    display:flex ;
+}
+#colouredStates .colouredStateBox1{
+    padding: 6px;
+    background-color: #ff9f43;
+    margin : 2em;
+    color: white;
+    width: 12em;
+    height: 6em;
+    border-radius: 4%;
+}
+#colouredStates .colouredStateBox2{
+    padding: 2px;
+    background-color: #00cfe8;
+    margin : 2em;
+    color: white;
+    width: 12em;
+    height: 6em;
+    border-radius: 4%;
+}
+#colouredStates .colouredStateBox3{
+    padding: 2px;
+    background-color: #1b2850;
+    margin : 2em;
+    color: white;
+    width: 12em;
+    height: 6em;
+    border-radius: 4%;
+}
+#colouredStates .colouredStateBox4{
+    padding: 4px;
+    background-color: #28c76f;
+    margin : 2em;
+    color: white;
+    width: 12em;
+    height: 6em;
+    border-radius: 4%;
+}
+i{
+    width: 100vw;
+}
 
+h4{
+    font-weight: bold;
+}  
