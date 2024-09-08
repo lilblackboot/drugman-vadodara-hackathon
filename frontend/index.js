@@ -4,6 +4,7 @@
 document.getElementById("addProductButton").addEventListener("click", displayForm);
 
 function displayForm() {
+    console.log("form")
   document.getElementById("addProductForm").innerHTML = `
   <form>
     <div class="mb-3">
